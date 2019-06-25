@@ -1,4 +1,4 @@
-package com.w.eb.service;
+packagecom.w.eb.service;
 import com.w.eb.entity.Commercial;
 import com.w.eb.entity.Domestic;
 import com.w.eb.exception.*;
@@ -43,12 +43,12 @@ public class ConnectionService {
 		{
 			if(type=="Domestic")
 			{
-				Domestic objD = new Domestic(currentReading,previousReading,(new float[]{(float) 2.3,(float) 4.2,(float) 5.5}));
+				Domestic objD = new Domestic(currentReading,previousReading,(new float[]{(2.3f,4.2f,5.5f}));
 				 val = objD.computeBill();
 			}
 		    if(type=="Commercial")
 			{
-				Commercial objC = new Commercial(currentReading,previousReading,(new float[]{(float) 5.2,(float) 6.8,(float) 8.3,(float) 0.09,(float) 0.06,(float) 0.02}));
+				Commercial objC = new Commercial(currentReading,previousReading,(new float[]{5.2f,6.8f,8.3f,0.09f,0.06f,0.02f}));
 				val = objC.computeBill();
 			}
 		}
